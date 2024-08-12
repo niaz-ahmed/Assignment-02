@@ -22,6 +22,8 @@ body {
   background: black;
 }
 .header {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 900px;
   background: linear-gradient(
@@ -34,7 +36,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin: 0 10%;
+  margin:0 10%;
   padding-top: 2%;
   align-items: center;
 }
@@ -91,7 +93,6 @@ nav .fa-solid,
   width: 100%;
   height: 800px;
   display: flex;
-  margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
@@ -140,13 +141,14 @@ nav .fa-solid,
 .card-2 {
   position: absolute;
   display: flex;
-  gap: 10px;
+  width: 220px;
+  height: 100px;
+  gap: 8px;
   justify-content: center;
   align-items: center;
   border: 1px solid rgba(192, 192, 192, 0.308);
   color: white;
-  width: 230px;
-  height: 110px;
+
   left: -30%;
   top: 70%;
   border-radius: 15px;
@@ -154,27 +156,25 @@ nav .fa-solid,
   backdrop-filter: blur(10px);
 }
 .circle {
-  margin-left: 15px;
   width: 40px;
   height: 40px;
-
   border-radius: 50%;
   background: rgb(230, 83, 60);
 }
 .card-2 h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 900;
 }
 .card-2 p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.5);
 }
 .card-4 {
   position: absolute;
   border: 1px solid rgba(192, 192, 192, 0.308);
   color: white;
-  width: 230px;
-  height: 120px;
+  width: 250px;
+  height: 110px;
   right: -30%;
   top: 20%;
   border-radius: 15px;
@@ -182,53 +182,64 @@ nav .fa-solid,
   backdrop-filter: blur(25px);
 }
 .card-4 h3 {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-weight: 900;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: 10px;
 }
-.card-4 p{
-  font-size: 1rem;
-  color:rgba(255, 255, 255, 0.5);
-  margin-left: 50px;
+.card-4 p {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 20px;
+  margin-top: 5px;
 }
 
-
-@media screen and (max-width:576px){
-
-  .banner-container{
+@media screen and (max-width: 576px) {
+  .banner-container {
     display: flex;
     gap: 20%;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: auto;
   }
-  .card-1{
-    margin-top: 100%;
+  .card-1 {
     width: 90%;
-    height: 600px;
+    height: auto;
   }
-  .hero-img{
+  .hero-img {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-   margin-left: 0%;
-   margin-right: 0%;
+    width: 95%;
   }
 
-
-  .card-2{
+  .card-2 {
     position: absolute;
     left: 10%;
     top: 50%;
+    width: 45%;
+    height: 15%;
   }
-  .card-4{
+  .card-4 {
     position: absolute;
+    width: 40%;
+    height: 16%;
     right: 5%;
     top: 5%;
   }
-  
 }
-/* banner style */
+/* banner style end*/
+
+
+/* exercise section style */
+
+.exercise-content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.exercises img{
+  border-radius: 50%;
+}
