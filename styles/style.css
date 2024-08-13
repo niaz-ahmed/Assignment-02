@@ -17,15 +17,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
+
 body {
   background: black;
+  border: 2px dashed green;
 }
 .header {
+  margin: 0 auto;
+  margin-bottom: 5%;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 900px;
   background: linear-gradient(
     180deg,
     rgb(48, 46, 46),
@@ -36,8 +40,8 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin:0 10%;
-  padding-top: 2%;
+  margin: 3% 10%;
+  /* padding-top: 2%; */
   align-items: center;
 }
 .menu {
@@ -90,15 +94,18 @@ nav .fa-solid,
 /* banner style */
 
 .banner-container {
-  width: 100%;
-  height: 800px;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .card-1 {
-  width: 600px;
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
 }
 .card-1 h1 {
   color: white;
@@ -141,14 +148,13 @@ nav .fa-solid,
 .card-2 {
   position: absolute;
   display: flex;
-  width: 220px;
-  height: 100px;
+  width: 190px;
+  height: 90px;
   gap: 8px;
   justify-content: center;
   align-items: center;
   border: 1px solid rgba(192, 192, 192, 0.308);
   color: white;
-
   left: -30%;
   top: 70%;
   border-radius: 15px;
@@ -173,9 +179,9 @@ nav .fa-solid,
   position: absolute;
   border: 1px solid rgba(192, 192, 192, 0.308);
   color: white;
-  width: 250px;
-  height: 110px;
-  right: -30%;
+  width: 200px;
+  height: 100px;
+  left: 70%;
   top: 20%;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.1);
@@ -184,14 +190,13 @@ nav .fa-solid,
 .card-4 h3 {
   font-size: 1.5rem;
   font-weight: 900;
-  margin-left: 20px;
-  margin-top: 10px;
+  margin-left: 5%;
 }
 .card-4 p {
   font-size: 0.7rem;
   color: rgba(255, 255, 255, 0.5);
-  margin-left: 20px;
   margin-top: 5px;
+  margin-left: 5%;
 }
 
 @media screen and (max-width: 576px) {
@@ -201,7 +206,7 @@ nav .fa-solid,
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: auto;
+    height: ;
   }
   .card-1 {
     width: 90%;
@@ -212,34 +217,67 @@ nav .fa-solid,
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95%;
+    width: 70%;
   }
 
   .card-2 {
     position: absolute;
-    left: 10%;
+    left: -10%;
     top: 50%;
-    width: 45%;
+    width: 60%;
     height: 15%;
   }
   .card-4 {
     position: absolute;
-    width: 40%;
+    width: 50%;
     height: 16%;
-    right: 5%;
-    top: 5%;
+    left: 60%;
+    top: 10%;
   }
 }
 /* banner style end*/
 
-
 /* exercise section style */
-
-.exercise-content{
+.habit-section{
+  max-width: 90%;
+  margin: 2% auto;
+  text-align: center;
+}
+.exercise-content {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+
 }
-.exercises img{
+.exercises img {
   border-radius: 50%;
 }
+.exercises h4{
+  color: white;
+}
+.exercises p{
+  color: rgba(255, 255, 255, 0.5);
+}
+.habit-title{
+  margin: 2% 0;
+}
+.habit-title h1{
+  color: white;
+  font-size: 3rem;
+}
+.habit-title p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+}
+
+
+@media screen and (max-width:576px){
+  .exercise-content{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+/* exercise section style */
