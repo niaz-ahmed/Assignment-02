@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -332,4 +332,99 @@ nav .fa-solid,
     scale: 1.5;
   }
 }
-/* run section style */
+/* run section style ends */
+
+
+/* BMI style */
+
+
+.bmi-container{
+  color: white;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.bmi-title h1{
+font-size: 3rem;
+}
+.bmi-title p{
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.bmi{
+  background: rgb(34, 34, 34);
+  display: flex;
+  gap: 10%;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 5%;
+  padding: 5%;
+  /* height: 500px; */
+}
+.bmi h2{
+  font-size: 1.7rem;
+  margin-bottom: 2%;
+}
+.bmi p{
+  font-size: 0.9rem;
+  color:rgba(255, 255, 255, 0.5);
+  margin-bottom: 2%;
+}
+.table{
+  width:350px;
+  height: 200px;
+  text-align: left;
+  margin-top: 20%;
+
+
+}
+.table, th, td{
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-collapse: collapse;
+  padding: 3%;
+
+}
+.table th{
+  font-size: 1rem;
+}
+.table td{
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.form-container{
+  width: 45%;
+}
+.form-container input[type="text"], #sex,#activity{
+  width: 45% ;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 5px;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgb(255, 255, 255, 0.1);
+}
+#sex{
+  width: 45%;
+}
+#activity{
+  width: calc(90% + 15px);
+}
+
+@media screen and (max-width:576px) {
+  .bmi{
+    display: flex;
+    flex-direction: column;
+  }
+  .bmi-container{
+    margin: 5% 0;
+  }
+  .form-container{
+    width: 100%;
+  }
+  
+}
+/* BMI style */
