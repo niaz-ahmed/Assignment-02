@@ -238,7 +238,7 @@ nav .fa-solid,
 /* banner style end*/
 
 /* exercise section style */
-.habit-section{
+.habit-section {
   max-width: 90%;
   margin: 2% auto;
   text-align: center;
@@ -247,37 +247,89 @@ nav .fa-solid,
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
-
 }
 .exercises img {
   border-radius: 50%;
 }
-.exercises h4{
+.exercises h4 {
   color: white;
 }
-.exercises p{
+.exercises p {
   color: rgba(255, 255, 255, 0.5);
 }
-.habit-title{
+.habit-title {
   margin: 2% 0;
 }
-.habit-title h1{
+.habit-title h1 {
   color: white;
   font-size: 3rem;
 }
-.habit-title p{
+.habit-title p {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.9rem;
 }
 
-
-@media screen and (max-width:576px){
-  .exercise-content{
+@media screen and (max-width: 576px) {
+  .exercise-content {
     display: flex;
     flex-direction: column;
   }
 }
 
+/* exercise section style ends */
 
-/* exercise section style */
+/* run section style */
+
+.extra-run {
+  width: 90%;
+  margin: 3% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+
+  background: rgb(34, 34, 34);
+}
+.run-description{
+  width: 40%;
+  margin: 30px;
+}
+.run-description h1 {
+  color: white;
+  font-size: 3rem;
+}
+.run-description p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+}
+.run-img img{
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 15px;
+  object-fit: none;
+  object-position: 68% 30% ;
+}
+
+@media screen and (max-width:576px){
+  .extra-run{
+    display: flex;
+    flex-direction: column;
+  }
+  .run-description{
+    width: 90%;
+  }
+  .run-img{
+    width: 90%;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .run-img img{
+    width: 100%;
+    margin: 0;
+    height: 250px;
+    object-fit:cover;
+    scale: 1.5;
+  }
+}
+/* run section style */
