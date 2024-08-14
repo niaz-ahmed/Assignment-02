@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 body {
@@ -206,7 +206,6 @@ nav .fa-solid,
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: ;
   }
   .card-1 {
     width: 90%;
@@ -290,7 +289,7 @@ nav .fa-solid,
 
   background: rgb(34, 34, 34);
 }
-.run-description{
+.run-description {
   width: 40%;
   margin: 30px;
 }
@@ -298,62 +297,59 @@ nav .fa-solid,
   color: white;
   font-size: 3rem;
 }
-.run-description p{
+.run-description p {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.9rem;
 }
-.run-img img{
+.run-img img {
   width: 400px;
   height: 400px;
   margin: 10px;
   border-radius: 15px;
   object-fit: none;
-  object-position: 68% 30% ;
+  object-position: 68% 30%;
 }
 
-@media screen and (max-width:576px){
-  .extra-run{
+@media screen and (max-width: 576px) {
+  .extra-run {
     display: flex;
     flex-direction: column;
   }
-  .run-description{
+  .run-description {
     width: 90%;
   }
-  .run-img{
+  .run-img {
     width: 90%;
     overflow: hidden;
     border-radius: 15px;
   }
-  .run-img img{
+  .run-img img {
     width: 100%;
     margin: 0;
     height: 250px;
-    object-fit:cover;
+    object-fit: cover;
     scale: 1.5;
   }
 }
 /* run section style ends */
 
-
 /* BMI style */
 
-
-.bmi-container{
+.bmi-container {
   color: white;
-  margin: 5% auto;
+  margin: 5% auto 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
-.bmi-title h1{
-font-size: 3rem;
+.bmi-title h1 {
+  font-size: 3rem;
 }
-.bmi-title p{
+.bmi-title p {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.5);
 }
-.bmi{
+.bmi {
   background: rgb(34, 34, 34);
   display: flex;
   gap: 10%;
@@ -364,41 +360,43 @@ font-size: 3rem;
   padding: 5%;
   /* height: 500px; */
 }
-.bmi h2{
+.bmi h2 {
   font-size: 1.7rem;
   margin-bottom: 2%;
 }
-.bmi p{
+.bmi p {
   font-size: 0.9rem;
-  color:rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   margin-bottom: 2%;
 }
-.table{
-  width:350px;
+.table {
+  width: 350px;
   height: 200px;
   text-align: left;
-  margin-top: 20%;
-
-
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
-.table, th, td{
+.table,
+th,
+td {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-collapse: collapse;
   padding: 3%;
-
 }
-.table th{
+.table th {
   font-size: 1rem;
 }
-.table td{
+.table td {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.5);
 }
-.form-container{
+.form-container {
   width: 45%;
 }
-.form-container input[type="text"], #sex,#activity{
-  width: 45% ;
+.form-container input[type="text"],
+#sex,
+#activity {
+  width: 45%;
   height: 50px;
   margin: 5px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -407,24 +405,143 @@ font-size: 3rem;
   color: rgba(255, 255, 255, 0.5);
   background: rgb(255, 255, 255, 0.1);
 }
-#sex{
+#sex {
   width: 45%;
 }
-#activity{
+#activity {
   width: calc(90% + 15px);
 }
 
-@media screen and (max-width:576px) {
-  .bmi{
+@media screen and (max-width: 576px) {
+  .bmi {
     display: flex;
     flex-direction: column;
   }
-  .bmi-container{
+  .bmi-container {
     margin: 5% 0;
   }
-  .form-container{
+  .form-container {
     width: 100%;
+  }
+}
+/* BMI style ends*/
+
+/* team styles */
+
+.team-container {
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
+
+}
+.team-container h1 {
+  color: white;
+  font-size: 3rem;
+}
+.team-container p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+}
+.team-members {
+  display: grid;
+  gap: 20px;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(3, 350px);
+  background: rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+.team-members h3 {
+  color: white;
+  margin: 0 5% 0;
+  font-size: 1rem;
+}
+.team-members p {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 5% 5%;
+  font-size: 0.8rem;
+}
+.img-1 {
+  background: url(../images/trainer1.png);
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* width: 350px; */
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 20px;
+}
+.img-2 {
+  background: url(../images/trainer2.png);
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* width: 350px; */
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 20px;
+}
+
+.img-3 {
+  background: url(../images/trainer3.png);
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* width: 350px; */
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 20px;
+}
+.img-4 {
+  background: url(../images/trainer4.png);
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* width: 350px; */
+  height: 300px;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 20px;
+}
+.img-5 {
+  background: url(../images/trainer5.png);
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* width: 350px; */
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 20px;
+}
+.img-6 {
+  background: url(../images/trainer6.png);
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* width: 350px; */
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 20px;
+}
+
+
+@media screen and (max-width:576px) {
+  .team-members{
+    display: flex;
+    flex-direction: column;
   }
   
 }
-/* BMI style */
+/* team styles */
