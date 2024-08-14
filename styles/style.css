@@ -398,10 +398,12 @@ nav .fa-solid,
 }
 .bmi-title h1 {
   font-size: 3rem;
+  margin-left: 2%;
 }
 .bmi-title p {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.5);
+  margin-left: 2%;
 }
 .bmi {
   background: rgb(34, 34, 34);
@@ -505,6 +507,7 @@ td {
   background: rgba(255, 255, 255, 0.1);
   text-align: left;
   border-radius: 15px;
+  margin-top: 2%;
 }
 .team-members h3 {
   color: white;
