@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -55,10 +55,12 @@ body {
   border-radius: 50px;
 }
 
-.menu li {
+.menu li,
+.menu-footer li {
   list-style: none;
 }
-.menu li a {
+.menu li a,
+.menu-footer li a {
   text-decoration: none;
   color: white;
   font-size: 1rem;
@@ -432,13 +434,12 @@ td {
   margin: 0 auto;
   max-width: 80%;
   text-align: center;
-
 }
 .team-container h1 {
   color: white;
   font-size: 3rem;
 }
-.team-container p{
+.team-container p {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.9rem;
 }
@@ -536,12 +537,53 @@ td {
   border-radius: 20px;
 }
 
-
-@media screen and (max-width:576px) {
-  .team-members{
+@media screen and (max-width: 576px) {
+  .team-members {
     display: flex;
     flex-direction: column;
   }
-  
 }
-/* team styles */
+/* team styles ends*/
+
+/* footer styles */
+footer {
+  background: rgba(255, 255, 255, 0.1);
+}
+footer p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+}
+.footer-container {
+  display: flex;
+  gap: 30%;
+  justify-content: center;
+  align-items: center;
+  margin: 2% auto;
+  width: 80%;
+  padding: 2%;
+}
+
+hr {
+  color: rgba(255, 255, 255, 0.5);
+  width: 80%;
+  margin: 2% auto;
+}
+.get-started {
+  display: flex;
+  gap: 10%;
+
+}
+.get-started h3{
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 5%;
+}
+.menu-footer li a{
+  color: rgba(255, 255, 255, 0.5);
+ font-size: 0.9rem;
+}
+#copy{
+  text-align: center;
+  padding: 2%;
+}
+/* footer styles */
